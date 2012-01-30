@@ -1,0 +1,7 @@
+Sencha Touch 2.0 MVC Boilerplate
+
+Goals:
+-Use Ext.Viewport as the core application container
+-Establish rendering scheme
+-Destory and clean up unused cards
+-Setup deployment to only complie used Sencha Touch 2.0 classes
