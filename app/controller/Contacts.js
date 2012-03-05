@@ -3,7 +3,8 @@ Ext.define('app.controller.Contacts', {
 	config: {
 		refs: {
 			contacts: 'contacts'
-		}
+		},
+		xtype: 'contacts'
 	},
 
 	init: function() {
@@ -29,8 +30,9 @@ Ext.define('app.controller.Contacts', {
 	
 	showContacts: function() {
 		var contacts = Ext.create('app.view.Contacts');
-		this.app.vp.add(contacts);
-		this.app.vp.setActiveItem(contacts);
+		// this.app.vp.add(contacts);
+		console.log(this.app.vp)
+		// this.app.vp.setActiveItem(contacts);
 	},
 	
 	showContactDetails: function(rec){
