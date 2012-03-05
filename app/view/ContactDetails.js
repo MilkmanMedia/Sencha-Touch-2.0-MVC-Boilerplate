@@ -1,6 +1,6 @@
 Ext.define('app.view.ContactDetails', {
     extend: 'Ext.Container',
-	require: 'app.view.template.ContactDetails',
+	requires: ['app.view.template.ContactDetails'],
 	xtype: 'contactDetails',
 	
 	config: {
