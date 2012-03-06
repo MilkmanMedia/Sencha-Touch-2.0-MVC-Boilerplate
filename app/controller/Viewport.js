@@ -26,5 +26,8 @@ Ext.define('app.controller.Viewport', {
 				}, 500);
 			}
 		});
+	},
+	launch: function(){
+		console.log("Launched Viewport");
 	}
 });

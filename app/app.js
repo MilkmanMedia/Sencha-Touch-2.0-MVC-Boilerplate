@@ -12,12 +12,16 @@ Ext.application({
 	stores: [
 		'Contacts'
 	],
-	controllers: ['Viewport', 'Contacts'],
+	controllers: [/*'Viewport',*/ 'Contacts'],
 	launch: function() {
-		this.fireEvent('showContacts');
-		Ext.Viewport.getLayout().setAnimation({
-			type: 'slide',
-			direction: 'left'
+		Ext.create('app.view.Viewport', {
+			
 		});
+		
+		this.fireEvent('showContacts');
+		// Ext.Viewport.getLayout().setAnimation({
+		// 	type: 'slide',
+		// 	direction: 'left'
+		// });
 	}
 });
